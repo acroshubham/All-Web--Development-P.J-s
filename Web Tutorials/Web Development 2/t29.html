@@ -1,0 +1,145 @@
+<!--  em, rem, vh, and vw units + Responsive design
+explained
+
+Responsive Design
+
+RD is a way to let the developer make a website
+that can be used upon each and every devices and 
+it can adapt it 
+its a necessity
+
+Ways to achieve Responsive Design :
+by using rem/vh/vw units over pixels.
+by using max width max height
+using css media queries 
+setting up the viewport
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html{
+            font-size: 7px;
+        }
+        h1{
+            text-align: center;
+            font-size: 10px;
+        }
+        .container{
+            font-size: 10px;
+        }
+        /* em 
+        font sizes are inherited relative
+            to the parent element
+            10em means ten times of parent element */
+            /* em means 10 times of a pixel. So, 10 pixel = 100 em. */
+        #first1{
+            font-size: 10em;
+        }
+        /* rem
+        font size gets set acc to the size of the root element
+        it generates <html> the root element
+        in rem r stands for root*/
+        #first2{
+            font-size: 10rem;
+            /* font size has change from 7px to 
+            70 px
+            because 10 rems means the 10 times of the root element
+             */
+        }
+        /* vh 
+        stands for viewport height
+        equalls to 1/100 times of the viewport height*/
+        /* e.g. suppose height of browser is 1000px, so 1vh is equaled to (1/100)*1000 = 10px */
+
+    </style>
+</head>
+
+<body>
+    we will just make heading and with help of them we will lean
+        the use of the effect of the em,rem,vh and vw. 
+    
+        <div class="container">
+            <h1 id="first1">This is my first heading</h1>
+            <h1 id="first2">This is my second heading</h1>
+            <h1 id="first3">This is my third heading</h1>
+        </div>
+    </body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vh</title>
+    <style>
+        html{
+            font-size: 7px;
+        }
+        h1{
+            text-align: center;
+            font-size: 10px;
+        }
+        .container{
+            border: 2px solid red;
+            height: 100vh;
+            width: 120px;
+        }
+        /* here we have made a border and assigned a height of 100vh to
+        it. */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first1">This is my first heading</h1>
+        <h1 id="first2">This is my second heading</h1>
+        <h1 id="first3">This is my third heading</h1>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vh</title>
+    <style>
+        /* VW
+        it stands for veiwport width
+        similar to vh, vw is equal to the 1/100 times of the viewport
+        width
+        e.g. browsser is 1000px, so 1vw is equaled to (1/100)*1000 = 10px
+         */
+        html{
+            font-size: 7px;
+        }
+        h1{
+            text-align: center;
+            font-size: 10px;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first1">This is my first heading</h1>
+        <h1 id="first2">This is my second heading</h1>
+        <h1 id="first3">This is my third heading</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+client => server => database
+
+so so so 
+in designing the api what we are doing is that we are first seeing the methods of the apis which are crud oprations of we can say read write delete and put or patcchwhat wer are seeing is the tablw which looks like this
+
+read /articles /aritcles-bauer
+the first parameter is what we call api unctins and the second one is routing the routing and the spcified routing 
+fo first of all we have to find the first routing that e have to display all the articles what we will do for it 
+we will use the fid document function of the mongoose or mongo db
+
+RESTful
+
+HTTPS verbs          /articles            /articles/shubham-sharma   
+
+GET          fetches all the articles    all article of shubham sharma
+
+POST         create one new article                 -
+
+PUT                 -                   updates all articles of shubham
+
+PATCH               -                   updates article on shubham
+
+DELETE        delete all the articles   delete article on sharma
+
+
+post is challanging as client send data as we don't have any html prely defined or some post request prely defined.
+without html how can we add the data.
+
+client makes request from browser to server for some files 
+and than server sends the files like html css and js to the browser
+but sometimes browser needs the data for it
+
+we can make such a get request to an api by simply (the above request above above post is chal... ) typing /articles enter and it'll send back data ti is server in json format how to do it in post method post man will help for it.
+
+further what w have done is that one has to now open postman and trheir one can find the post method and we will post to localhost the url endcoded data from selecting body the titile and content as the key and the name and description as the value for those keys
+and than we will console log those values 
+
+afterwards we will console log those valuse 
+and when we see that we get the value now we will save taht data in mongoose
+
+and by writing tha code const newArticle = new Article ({
+    title:
+    content:
+})
+
+and making a send request from postman my data gets saved on robo
+
+
+docs docs docs ***
+can make you an expert
+
+now postman is just loading and nothing happens 
+why we have to make a function tha logs the erro or successful message 
+
+how anjela knows it docs docs docs and docs ***
+
+app.route helps to create chained route handlers 
+docs of express
+
+now what we have done we used the parameter 
+that params one and used find one method.

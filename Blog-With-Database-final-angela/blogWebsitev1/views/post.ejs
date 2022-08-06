@@ -1,0 +1,7 @@
+<% include ./partials/header %>
+
+<h1><%= title %></h1>
+<p>
+     <%= post.body.substring(1, 100) + "..."      <a href="/posts/<%+ post.title %>">Read More</a> %>
+</p>
+<% include ./partials/footer %>

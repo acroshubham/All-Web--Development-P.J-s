@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiblity and z-block</title>
+</head>
+<style>
+    .box{
+        width: 170px;
+        height: 170px;
+        border: 2px solid red;
+    }
+
+    #box1{
+        top: 30px;
+        position: relative;
+        background-color: green;
+        z-index: 35;
+
+        /* more the z index it will come up
+        js styling and up down */
+    }
+    #box2{
+        top: 34px;
+        /* display: none;
+        visibility: hidden;
+        display none will restrict the usage of the space
+        that is being used by the box
+        whereas the visiblity hidden will reserve the space of the 
+        box but display nothing on screen. */
+
+        /* z index overlapping will specify 
+        z index works on positioned element
+        z will work not for static but for relative, absolute,  */
+
+        background-color: yellow;
+        position: relative;
+        z-index: -1;
+    }
+    #box3{
+        background-color: blue;
+    }
+    #box4{
+        background-color: purple;
+    }
+    
+</style>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

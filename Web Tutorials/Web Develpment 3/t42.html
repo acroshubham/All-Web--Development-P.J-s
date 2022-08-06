@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            /* minimum 400px and maximum 1fr
+            The main things are the floats the flex box and the grid and the simple css. Development imporvement code dekhte hi smjh aye.
+            Asa code likhe jo khud ko nhi bakiyon ko samajh aye.
+            Make bookmark
+            Patience, Consitency and time is the main thing to complete such big courses. */
+        }
+        .box{
+            border: 2px solid yellow;
+            background-color: lightgoldenrodyellow;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is a box. Can't you see!!!-1</div>
+        <div class="box">This is a box. Can't you see!!!-2</div>
+        <div class="box">This is a box. Can't you see!!!-3</div>
+        <div class="box">This is a box. Can't you see!!!-4</div>
+        <div class="box">This is a box. Can't you see!!!-5</div>
+        <div class="box">This is a box. Can't you see!!!-6</div>
+        <div class="box">This is a box. Can't you see!!!-7</div>
+        <div class="box">This is a box. Can't you see!!!-8</div>
+        <div class="box">This is a box. Can't you see!!!-9</div>
+        <div class="box">This is a box. Can't you see!!!-10</div>
+        <div class="box">This is a box. Can't you see!!!-11</div>
+        <div class="box">This is a box. Can't you see!!!-12</div>
+    </div>
+</body>
+</html>

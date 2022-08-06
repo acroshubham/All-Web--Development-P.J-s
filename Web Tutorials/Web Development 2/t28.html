@@ -1,0 +1,118 @@
+<!-- FLEXBOX -->
+<!--
+    
+    WHAT IS A FLEXBOX
+    FLEXBOX IS A ONE-DIMENSIONAL LAYOUT METHOD FOR
+LAYING OU TITEMS IN ROWS OR COLUMNS.
+
+CSS FLEXBOX IS A BETTER WAY TO ALIGN ITEMS INTO
+A CONTAINER
+
+FLEXBOX = flexible + box
+
+p{ color: blue; } 
+
+selector    property    value
+
+it's a flexible box
+
+..32
+-->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            height: 550px;
+            width: 100%;
+            background-color: cyan;
+            border: 3px solid blueviolet;
+            border-radius: 3px ;
+            margin: 10px;
+            padding: 3px;
+            /* Initialize the container as a flex box */
+            display: flex;
+            /* responsive website */
+            flex-wrap: wrap;
+            /* the content will shift in center
+            space evenly spaces including starting and end are the same
+            space around in both the dirn the space will be same
+            space bw leaving start and end the spaces are the same
+            alling vertically center 
+            allign-items:center;
+            stretch evenly space in the gaps vertically */
+            justify-content: center;
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* default */
+            /* flex-direction: row-reverse; */
+            /* from right elements will start filling to left increasing to right  
+            
+            wrap*/
+            /* flex-wrap: wrap-reverse; */
+
+            /* dirn and wrap can be set at once */
+            /* flex-flow: column wrap; */
+
+        }
+
+        /* flex propertiex for flex .container */
+        /* flex properties for flex .item */
+        /* .items{
+            width: 200px;
+            height: 250px;
+            background-color: hotpink;
+            border: 2px solid crimson;
+            border-radius: 3px;
+            margin: 10px;
+            padding: 3px;
+        }
+        .item-1{
+            /* order: 2; higher the order later it shows up in the container */
+            /* flex-grow: 3; */
+            /* the container will grow by its initial size by into 3 */
+        }
+        .item-2{
+            /* flex-basis: 120px; width will increase
+            when flex dirn is set to row it'll control width
+            when flex dirn is set to clmn it'll control height */
+        }
+        .item-3{
+            /* align-self: flex-end;
+            align-self: center;
+            align-self: flex-start;
+             */
+            /* it'll set the flex box at the particular position */
+            /* short hand 
+            grow shrink basis
+            flex-basis: 2 2 244px; */
+        }
+        .item-4{
+
+        } 
+    </style>
+</head>
+<body>
+    <h1>this is a flexbox</h1>
+    <div class="container">
+    <div class="items" id="item-1">
+        I am a phone
+    </div>
+    <div class="items" id="item-2">
+        I am a Tablet
+    </div>
+    <div class="items" id="item-3">
+        I am a Laptop
+    </div>
+    <div class="items" id="item-4">
+        I am a PC
+    </div>
+</div>
+</div>
+</body>
+</html>

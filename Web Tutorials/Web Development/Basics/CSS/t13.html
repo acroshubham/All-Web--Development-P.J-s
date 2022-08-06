@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <!-- External CSS -->
+    <!-- ex sheet is preceedence of int css
+            no
+            link styling t13 bring here or the content in t13 copied their is the same
+            for the preceedence, one has to mark something important 
+            as per the down is more preceedence than the above one -->
+    <style>
+        p {
+            color: peru;
+
+            background-color: powderblue !important;
+            /* now this will take more preceedence. now now over write can be done by link external style sheet. */
+
+        }
+
+        /* Internal CSS has less preceedence than the Inline CSS */
+    </style>
+    <link rel="stylesheet" href="t13.css">
+</head>
+
+<body>
+    <h3> this is css tutorial</h3>
+    <!-- inline css -->
+    <!-- <p style="color:rebeccapurple;background-color:turquoise;">in this tutorial I am capable to learn all about the css and master it</p> -->
+    <p>in this tutorial I am capable to learn all about the css and master it</p>
+</body>
+
+</html>

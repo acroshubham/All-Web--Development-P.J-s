@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth pseud selectors</title>
+    <style>
+        .container {
+            display: block;
+            width: 233px;
+            margin: auto;
+            /* when one has to set the item in center
+            one has to set the width and than one has to do ther margin auto
+            and than this is done i.e. margin auto */
+        }
+
+        input {
+            display: block;
+            padding: 23px;
+            border-radius: 2px solid grey;
+
+        }
+
+        a[target] {
+            font-size: 30px;
+            color: coral;
+        }
+
+        a[target='_self'] {
+            font-size: 30px;
+            color: yellow;
+        }
+
+        input[type='email'] {
+            color: green;
+            border-color: greenyellow;
+        }
+
+        /* to select every start element for adding css for every 3rd element 2n+0; for odd and even
+        li:nth-child(odd/even) */
+        li:nth-child(3) {
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://www.google.com" target="_blank">Google</a></h1>
+        <h1><a href="http://www.facebook.com" target="_self">Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your Name">
+            <input type="email" placeholder="Enter your Email">
+            <input type="password" placeholer="Enter your Password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+        </ul>
+    </div>
+</body>
+
+</html>

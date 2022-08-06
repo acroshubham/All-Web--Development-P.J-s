@@ -1,0 +1,140 @@
+CREATE TABLE customers{
+    id INT NOT NULL,J
+    First-name STRING,
+    Last-name STRING,
+    Address, STRING,
+}
+INSERT INTO customers VALUES("Shubham", "Sharma", "India")
+INSERT INTO customers VALUES("Angela", "Yu", "America")
+CREATE TABLE products{
+    id INT NOT NULL,
+    name STRING,
+    price MONEY,
+    PRIMARY KEY (id)
+}
+
+INSERT INTO products VALUES (1, "PEN", 1.20);
+
+// If one don't have the value of those data in the table
+
+INSERT INTO produtct (id, name) VALUES(1, "Pencil");
+
+// sqlonline.com //
+321: Read data from database
+SELECT * FROM 'products'
+
+read only row 
+
+SELECT * products where id = 1
+
+322: Update data from database
+
+UPDATE products 
+SET price = 0.8
+// run here every value will change so the down is important
+WHERE id = 2;
+
+
+// ALTER Table feature
+ALTER TABLE products
+ADD stock INT 
+
+// UPDATE DATA
+
+UPDATE products
+SET stock =32;
+WHERE id = 1;
+
+UPDATE products
+WHERE id = 2;
+
+very painfull to do.
+
+// DELETE RECORDS
+
+DELETE FROM products
+// run here delete each everything 
+WHERE id =2;
+
+// Relationships in SQL 
+
+add Pencil back
+
+INSERT INTO products
+VALUES : (2, "Pencil", 1.8)
+
+CREATE TABLE orders {
+    id INT NOT NULL,
+    ORDER_NUMBER INT,
+    customer_id INT,
+    product_id INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (customer_id), REFRENCES customers(id),
+    FOREIGN KEY (product_id), REFRENCES  products (id)
+}
+
+
+// adding 
+
+INSERT INTO orders 
+VALUES (1, 4362, 1, 2)
+
+// join table
+
+SELECT orders.order_number, cus.fn, cus.ln, cus.a
+FROM orders
+INNER JOIN ON orders.cus_id = cus.id
+SELECT orders.order_number, p.name, p.price, p.stock
+FROM orders
+INNER JOIN ON orders.pro_id = pro.id
+                    FOREIGN = PRIMARY
+
+// I HAVE COPY OF THIS CODE ON WHAT WE SAY RESOURCES 
+
+FIND ALL HARD WORKING PEOPLE.
+for e.g. library.
+something difficult go there.
+
+// MONGO database
+
+get into mongo.db
+command: mongosh.exe
+create a database
+use //nameOfFile+DB
+e.g. use shopDB
+
+crud operations in database
+
+create:
+db.collection.insertOne{
+
+}
+
+e.g. :
+db.users.insertOne{ // collection
+    {
+    name: "sue",    // field: value        //     
+    age: 21;        // field: value       //    document
+    status: "single"// field: value      // 
+    }
+}
+To add a product into the database
+shopDB> db.product.insertOne({_id:1, name:"Pen", price: 1.20})
+{ acknowledged: true, insertedId: 1 }
+shopDB> show collections
+product
+
+reading the data from the databasse
+db.products.find()
+
+db.collection.update()
+
+db.collection.deleteMany().
+db.collection.deleteOne().
+
+Relationships in MongoDB
+https://www.tutorialspoint.com/mongodb/mongodb_relationships.htm#:~:text=Relationships%20in%20MongoDB%20represent%20how,of%20storing%20addresses%20for%20users.
+
+working with mongo db 
+first by native driver. 
+second by a package called PACKAGE

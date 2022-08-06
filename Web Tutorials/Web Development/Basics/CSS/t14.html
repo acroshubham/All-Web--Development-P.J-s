@@ -1,0 +1,83 @@
+<!-- /* css  selectors are used to find the element whose
+property will be set
+
+seleectors are used to target the html elements
+
+selectors makes it easy for us to easily target
+single/multiple HTML elements in the markup
+
+
+types of selector:
+css element selector
+css id selector
+css class selector
+css grouping selector
+
+*/
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS selectors</title>
+     <style>
+        /*  for first paragraph */
+        /* element selector */
+        p{
+            border: 2px solid peru;
+        }
+        #firstpara{
+            color:green;
+            background-color: grey;
+        } 
+        /* id selector */
+        /* #redElement{  */
+        .redElement{ 
+            color: red;
+        }
+        /* class selector */
+        .bgBlue{
+            background-color: yellow;
+        }
+            /* id is unique but class can be multiple
+            here we have set the id color to be red and than I have than call that id with #pound symbol and give that 
+            color red. 
+            
+            Element Selector, Class Selector, ID Selector, Grouping Selector*/
+
+            footer,span{
+                background-color: palevioletred;
+
+            }
+            /* Grouping Selector */
+     </style>
+ </head>
+ <body>
+     <h3>CSS Selectors</h3>
+     <p id="firstPara">this is a simple para to demonstrate css selectors </p>
+     <!-- <p id = "redElement">this a second paragraph</p> -->
+     <p id = "secondPara" class ="redElement bgBlue">this a second paragraph</p>
+        <!--two calsses can be added by just giving a space and when one has given a class will be called 
+        inside style by . operator and # operator will call id.  -->
+
+     <div>
+     <p>this a third paragraph</p>
+     <span>this is span</span>
+    </div>
+
+    <footer> This is footer</footer>
+    <!-- all para are red that is element selector -->
+
+ </body>
+ </html>
+
+ <!-- 1 element should use id selector
+    same elements use class selector
+    logo id selector
+    class sign and login will use class selector.
+    id is identifier. 
+      Advanced Selector -->

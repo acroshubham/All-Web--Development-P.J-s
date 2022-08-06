@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+   
+        /* universal selector */
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(251, 255, 0);
+        }
+        .container{
+            background-color: burlywood;
+            border:3px solid rgb(255, 157, 0);
+            /* we can set margin and padding for top,bottom,left and right by this */
+
+            padding: 34px 20px;
+            margin: 14px 19px;
+            border-radius: 23px;
+
+            /* padding: 10px 10px 10px 10pxpadding = top right bottom left  margin */
+
+            /* padding: 30px 19px; padding y(top/bottom) x (left/right)  margin
+            
+            when we increase the padding of the box on the website, the width of the elemnt is changing to stop it to accur */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3>Padding and margin</h3>
+
+        <div class ="container">
+        <h3>First Para</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, eum a nisi architecto aliquam accusantium sint cum incidunt deleniti modi. Debitis illo, minus repellat nihil maxime reiciendis nemo praesentium. Placeat, recusandae dolorem alias suscipit consectetur officiis natus animi deserunt excepturi?</p>
+    </div>
+    <div class ="container">
+        <h3>Second Para</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, eum a nisi architecto aliquam accusantium sint cum incidunt deleniti modi. Debitis illo, minus repellat nihil maxime reiciendis nemo praesentium. Placeat, recusandae dolorem alias suscipit consectetur officiis natus animi deserunt excepturi?</p>
+    </div>
+    <div class ="container">
+        <h3>Third Para</h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, eum a nisi architecto aliquam accusantium sint cum incidunt deleniti modi. Debitis illo, minus repellat nihil maxime reiciendis nemo praesentium. Placeat, recusandae dolorem alias suscipit consectetur officiis natus animi deserunt excepturi?</p>
+    </div>
+    <div class ="container">
+        <h3>Fourth Para</h3>
+        <p id="fourth">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, eum a nisi architecto aliquam accusantium sint cum incidunt deleniti modi. Debitis illo, minus repellat nihil maxime reiciendis nemo praesentium. Placeat, recusandae dolorem alias suscipit consectetur officiis natus animi deserunt excepturi?</p>
+    </div>
+    
+    <!-- box model:
+        content->padding->border->margin -->
+        </body>
+        </html>

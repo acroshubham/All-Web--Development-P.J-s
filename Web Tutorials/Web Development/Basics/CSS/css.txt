@@ -1,0 +1,40 @@
+CSS gives style to raw HTML
+CSS stands for Cascading Style Sheets
+CSS is used to give style to our web pages
+css is used to make websites responsive
+html is used to structure a websites
+css takes the responsiblity to design
+
+css helps to make a website responsive means on every screen nice.
+
+use to handle the presentation of the website
+it makes the webpage containing HTML
+it makes our website beautiful and modern looking
+
+syntax:
+
+P{color: blue;}
+selector: where
+property: change
+value: object to be changed
+
+
+header, p.intro [Group of Selectors]
+{
+    background-color: red;
+    border-radius: 3px;
+}
+[group of Declaration Block]
+
+
+THREE WAY TO ADD CSS TO MARKUP 
+MARKUP FANCY NAME FOR HTML
+
+1) Inline CSS: css is added to the elements directly using style attribute
+<p style =""' > </P>
+2) Internal CSS: css is kept inside the head tags in <style> tags
+css has 10,000 line.
+3) External CSS: css is kept separately inside a .css style sheet 
+
+
+End of css tutorial

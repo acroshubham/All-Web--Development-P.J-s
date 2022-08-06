@@ -1,0 +1,10 @@
+<% include ./partials/header %>
+    <h1>Home</h1>
+    <p> <%= startingContent %></p>
+
+    <% dataposts.forEach(function(datapost){ %>
+    <h1><%= datapost.title %></h1>
+    <p><%= datapost.content %></p>
+    <% }); %>
+
+<% include ./partials/footer %> 

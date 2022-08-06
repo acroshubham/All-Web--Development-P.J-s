@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            /* grid-column-gap: auto;
+            grid-row-gap: auto; */
+
+        }
+        .items{
+            padding: 20px;
+            border: 2px solid yellow;
+            background-color: lightgoldenrodyellow;
+        }
+        .box:first-child{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column: 1/ span;
+            /* This is the main thing by which one can do the change in the things like all the things and do all the things.
+            SEO- User Experiece only and only user user experiece and information i.e. user experience 
+            grid float and flex box */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">It's a box motherfucker, son of a bitch, ass of a whore, bastard, yo daddy-daughter, bang-bang-brezzer-whore-1</div>
+        <div class="items">It's a box motherfucker, son of a bitch, ass of a whore, bastard, yo daddy-daughter, bang-bang-brezzer-whore-2</div>
+        <div class="items">It's a box motherfucker, son of a bitch, ass of a whore, bastard, yo daddy-daughter, bang-bang-brezzer-whore-3</div>
+        <div class="items">It's a box motherfucker, son of a bitch, ass of a whore, bastard, yo daddy-daughter, bang-bang-brezzer-whore-4</div>
+        <div class="items">It's a box motherfucker, son of a bitch, ass of a whore, bastard, yo daddy-daughter, bang-bang-brezzer-whore-5</div>
+        <div class="items">It's a box motherfucker, son of a bitch, ass of a whore, bastard, yo daddy-daughter, bang-bang-brezzer-whore-6</div>
+        <div class="items">It's a box motherfucker, son of a bitch, ass of a whore, bastard, yo daddy-daughter, bang-bang-brezzer-whore-7</div>
+        <div class="items">It's a box motherfucker, son of a bitch, ass of a whore, bastard, yo daddy-daughter, bang-bang-brezzer-whore-8</div>
+        <div class="items">It's a box motherfucker, son of a bitch, ass of a whore, bastard, yo daddy-daughter, bang-bang-brezzer-whore-9</div>
+    </div>
+</body>
+</html>

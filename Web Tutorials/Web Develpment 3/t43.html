@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+        <style>
+            .container{
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+                /* make a matrix rows and clmns every row has same number clmns; */
+            }
+            .item{
+                border: 2px solid yellow;
+                background-color: lightgoldenrodyellow;
+                padding: 12px 10px;
+            }
+            #navbar{
+                grid-area: navbar;
+            }
+            #section{
+                grid-area: section;
+            }
+            #aside{
+                grid-area: aside;
+            }
+            footer{
+                grid-area: footer;
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quo illum non laborum maiores impedit est blanditiis quae placeat similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta qui quasi adipisci quis consequatur culpa temporibus omnis error vel mollitia suscipit ex excepturi ipsum illum ipsa provident ut corrupti saepe facilis, velit accusantium est quisquam! Quia facilis culpa architecto quae nulla molestias explicabo distinctio, repudiandae magni veniam tempora, obcaecati praesentium omnis accusamus impedit alias nisi ut. Saepe provident maxime quod architecto voluptate reiciendis earum animi laboriosam labore, odit temporibus debitis amet eos unde officiis natus praesentium quibusdam nisi recusandae laborum fugit explicabo eum. Numquam fugit ratione atque illo maiores dolor sit recusandae! Repellat aut, doloribus debitis voluptate adipisci ex atque quibusdam reprehenderit eveniet placeat distinctio consequuntur eum blanditiis. Laborum, repellendus dolore? Itaque maxime cumque quos adipisci. Sapiente reiciendis totam quod repellendus. Accusamus iure, earum vel eius iste tempora obcaecati suscipit natus rerum rem ex dolores officiis nulla voluptatem, maxime vitae tenetur labore, fugiat illo impedit blanditiis et maiores deleniti molestiae? Eveniet itaque consequatur repellat corrupti provident veritatis accusamus nihil impedit! Possimus pariatur expedita natus provident dicta accusamus, minus sunt mollitia ipsa eaque neque similique vero ab excepturi consequatur? Facere omnis nostrum tempora! Itaque quas, animi nobis praesentium minima doloribus repellendus voluptas alias. Quia, voluptates! Sit vel doloribus possimus mollitia reiciendis impedit voluptas, cumque culpa aut harum eaque ducimus corporis iste! Perferendis non neque quaerat assumenda tempore excepturi veniam asperiores, doloribus ducimus modi obcaecati similique accusamus dolorem, voluptate magnam nam quod fugit molestias doloremque officia? Nobis, culpa perferendis inventore iste eaque illum illo beatae obcaecati? Fugit eveniet iste aperiam rerum. Incidunt eaque quibusdam eum. Veniam veritatis, quo ut quos voluptatum corrupti. Nostrum reic
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nobis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit magni repudiandae, vel nemo quis architecto quaerat quidem dolorum temporibus aliquam non recusandae quo fugit. Doloremque non voluptatum culpa sit eos tenetur assumenda, laborum molestiae quasi, ea itaque incidunt, quos id adipisci ipsum iure. Dicta saepe quibusdam, repellat quis, pariatur amet qui, placeat possimus quos sunt ratione? Officia, labore tempore magni doloribus laudantium omnis ipsa atque, autem commodi neque tempora ratione vel! Quam repudiandae consectetur, quibusdam corrupti deserunt voluptatum optio corporis consequatur, magni porro assumenda enim mollitia dignissimos dicta quidem facere autem repellat officiis? Nulla suscipit quas placeat voluptate unde ratione ut dicta, aliquid temporibus iusto eos, nisi, magnam rerum enim repellat. Sunt distinctio amet cum fuga dolore quo eveniet eius odio. Facilis, asperiores voluptas et veniam ipsa eveniet labore alias repellendus fugiat saepe hic, dolore, eius cum laborum non quis tenetur modi perspiciatis natus consectetur. Suscipit ipsam a, repellat facere optio iusto dolor corporis rem necessitatibus obcaecati quod eius vero, voluptates unde tempore totam incidunt provident laboriosam, molestias et mollitia tempora fuga. Nesciunt eveniet officiis modi, fuga a perspiciatis officia, debitis, sapiente cum deserunt maxime placeat expedita iste? Inventore id hic rerum, ipsum voluptates repellat laboriosam dolor perspiciatis unde soluta? Eum, ex voluptatibus. Assumenda modi consectetur perferendis quibusdam esse commodi possimus enim, doloremque necessitatibus velit iure rerum quis deserunt minima quidem a vitae dolorem officia dolor, sed nihil voluptatibus cumque et quos. Officia perferendis harum ratione! Neque, voluptatem nulla! Cum, deleniti. Qui id, beatae perferendis iure quod tenetur impedit assumenda nisi obcaecati praesentium v
+        </div>
+        <footer class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consectetur laboriosam magni molestias?
+        </footer>
+        <!-- <div class="item">This is a box. You Shitty Lame Ass-1</div>
+        <div class="item">This is a box. You Shitty Lame Ass-2</div>
+        <div class="item">This is a box. You Shitty Lame Ass-3</div>
+        <div class="item">This is a box. You Shitty Lame Ass-4</div>
+        <div class="item">This is a box. You Shitty Lame Ass-5</div>
+        <div class="item">This is a box. You Shitty Lame Ass-6</div>
+        <div class="item">This is a box. You Shitty Lame Ass-7</div>
+        <div class="item">This is a box. You Shitty Lame Ass-8</div>
+        <div class="item">This is a box. You Shitty Lame Ass-9</div>
+        <div class="item">This is a box. You Shitty Lame Ass-10</div>
+        <div class="item">This is a box. You Shitty Lame Ass-11</div>
+        <div class="item">This is a box. You Shitty Lame Ass-12</div>
+        <div class="item">This is a box. You Shitty Lame Ass-13</div>
+        <div class="item">This is a box. You Shitty Lame Ass-14</div>
+        <div class="item">This is a box. You Shitty Lame Ass-15</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+            /* ek line m aa jayenge */
+        }
+
+        .card {
+            margin: 20px 18px;
+            padding: 20px 20px;
+            /* border: 2px solid grey; */
+            background-color: black;
+            color: white;
+            box-shadow: 10px 10px 10px 10px grey;
+            /* negative will make it go up */
+            /* 1st offset x and 2nd offset y blur radus 3rd entity 
+            4th entity shadow kitna failana ha*/
+            /* rgba alpha makes it that how the darker the color with be
+            box shadow for inside
+            box-shadow: inset 10px 10px green
+            multiple shadow
+            green 10 10, red. */
+        }
+        .card h2{
+            text-shadow: 4px 4px 4px  snow;
+            /* negative shadow up */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course -1</h2>
+            <p>This is C++ course Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt esse expedita dicta. Necessitatibus
+                voluptas dolorem totam quisquam molestias eius ea vitae repellat laboriosam voluptates perferendis,
+                iste, doloremque ullam libero quia consequuntur tenetur deleniti? Voluptatem ea est veritatis a
+                praesentium iure voluptates similique, accusantium, blanditiis ullam adipisci maiores voluptate
+                consequuntur dolore aliquid voluptatum explicabo error ipsam provident quod. Quibusdam, ad.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course -2</h2>
+            <p>This is HTML course Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt esse expedita dicta. Necessitatibus
+                voluptas dolorem totam quisquam molestias eius ea vitae repellat laboriosam voluptates perferendis,
+                iste, doloremque ullam libero quia consequuntur tenetur deleniti? Voluptatem ea est veritatis a
+                praesentium iure voluptates similique, accusantium, blanditiis ullam adipisci maiores voluptate
+                consequuntur dolore aliquid voluptatum explicabo error ipsam provident quod. Quibusdam, ad.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt esse expedita dicta. Necessitatibus
+                voluptas dolorem totam quisquam molestias eius ea vitae repellat laboriosam voluptates perferendis,
+                iste, doloremque ullam libero quia consequuntur tenetur deleniti? Voluptatem ea est veritatis a
+                praesentium iure voluptates similique, accusantium, blanditiis ullam adipisci maiores voluptate
+                consequuntur dolore aliquid voluptatum explicabo error ipsam provident quod. Quibusdam, ad.</p>
+        </div>
+        <div class="card" id="card-4">
+            <h2>card-4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt esse expedita dicta. Necessitatibus
+                voluptas dolorem totam quisquam molestias eius ea vitae repellat laboriosam voluptates perferendis,
+                iste, doloremque ullam libero quia consequuntur tenetur deleniti? Voluptatem ea est veritatis a
+                praesentium iure voluptates similique, accusantium, blanditiis ullam adipisci maiores voluptate
+                consequuntur dolore aliquid voluptatum explicabo error ipsam provident quod. Quibusdam, ad.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "It is an intro to learning node and NPM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shubham Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "supervillains": "^3.0.0"
+  }
+}
